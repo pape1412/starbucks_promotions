@@ -32,9 +32,7 @@ The __data__ used throughout this project is contained in three files: ```portfo
 ```
 
 ### Column Descriptions
-Please refer to the following __list__ for a description of variables.
-
-### Portfolio.json
+#### Portfolio.json
 ```
 - id (string)                # offer id
 - offer_type (string)        # type of offer i.e. BOGO, discount, informational
@@ -43,7 +41,7 @@ Please refer to the following __list__ for a description of variables.
 - duration (int)             # validity period of offer in days
 - channels (list of strings) # communication channels via which offer was sent to user
 ```
-### Profile.json
+#### Profile.json
 ```
 - age (int)                  # age of the customer
 - became_member_on (int)     # date when customer created an app account
@@ -51,7 +49,7 @@ Please refer to the following __list__ for a description of variables.
 - id (str)                   # customer id
 - income (float)             # customer's income
 ```
-### Transcript.json
+#### Transcript.json
 ```
 - event (str)                # record description (ie transaction, offer received, offer viewed, etc.)
 - person (str)               # customer id
