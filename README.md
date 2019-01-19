@@ -21,6 +21,7 @@ The data sets being used consist of simulated data from Starbucks and was provid
 ## Motivation
 
 ## Files
+The data used throughout this project is contained in three files: ```portfolio.json```, ```profile.json``` & ```transcript.json```. Despite that, you find all coding work in the jupyter notebook ```starbucks_capstone.ipynb```in the main folder of this repository. Please use the following file tree for further orientation.
 ```
 - data
 |- portfolio.json             # Offer portfolio meta data
@@ -30,13 +31,9 @@ The data sets being used consist of simulated data from Starbucks and was provid
 - starbucks_capstone.ipynb    # Project notebook
 - xgb_regressor.pkl           # Trained regression model
 ```
-The data used throughout this project is contained in three files:
-- ```portfolio.json```
-- ```profile.json```
-- ```transcript.json```
 
 ### Column Descriptions
-Please refer to the following overview for a description of variables.
+Please refer to the following list for a description of variables.
 
 ### Portfolio.json
 ```
@@ -57,10 +54,10 @@ Please refer to the following overview for a description of variables.
 ```
 ### Transcript.json
 ```
-event (str)                  # record description (ie transaction, offer received, offer viewed, etc.)
-person (str)                 # customer id
-time (int)                   # time in hours (the data begins at time t=0)
-value (dict of strings)      # either an offer id or transaction amount depending on the record
+- event (str)                # record description (ie transaction, offer received, offer viewed, etc.)
+- person (str)               # customer id
+- time (int)                 # time in hours (the data begins at time t=0)
+- value (dict of strings)    # either an offer id or transaction amount depending on the record
 ```
 
 ## Findings
