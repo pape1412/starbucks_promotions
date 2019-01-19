@@ -66,7 +66,7 @@ Both the analytical (and its variations) and the regression model achieve soluti
 - Increased PPU comes at the cost of __losing support__ within the data e.g. arriving at PPU(Top5) = 17.28\$$ is based on  records of 10,603 (62\%) users only
 - The way the demographics groups are being created can impose quite some __uncertainty__ when leading to very small groups or even down to single users
 
-#### Regression Model (XGBoost)
+### Regression Model (XGBoost)
 - Regression model is able to find offer type combinations for each user which __improve transaction profits__ per user by 7% with PPU(Regr) = 12.45\$$
 - Finding the right offers can sometimes mean __not sending__ any offer at all (14% less users reached with offers)
 
