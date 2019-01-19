@@ -1,9 +1,6 @@
 # Starbucks Promotions
 Optimizing Starbucks promotion strategy.
 
-## Intro
-This project explores __two different approaches__ of finding the right fit between Starbucks' promotion strategy and users of their rewards mobile app.
-
 ## Installation
 ### Libraries
 I've mainly used standard Python libraries throughout the project. However, as I did face issues upgrading to the latest version of scikit-learn with Anaconda, I've decided to list the __most important packages__ and corresponding version numbers used:
