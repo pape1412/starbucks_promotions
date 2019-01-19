@@ -17,7 +17,7 @@ The data sets being used consist of __simulated data from Starbucks__ that mimic
 ## Motivation
 One of Starbucks' goals behind sending out offers is to __increase the response__ of its app users. On the one hand, response can refer to the frequency of transactions and on the other to amounts spent. However, if and how users respond, depends on the __types of offers__ being sent as well as user specific (socio-)__demographic characteristics__. In fact, not getting the fit between the two right can have a significant effect on Starbucks financial performance.
 
-The goal of this project is to __optimize Starbucks' promotion strategy__, whereas the focus lies on maximizing __transaction profits__ per user. In order to do so, I'm going to explore __two different approaches__ of finding the right types of offers for each individual Starbucks app user. The first one is an __alytical solution__ to the problem - simple yet effective - that extracts the optimal combination of offer types including expected transaction profits for different demographic groups. The second one involves __linear and tree-based regression models__ as well as simulations of monetary response for each app user and possible offer type combinations. In the end, both solutions will have to prove their validity against a __benchmark__ of Starbucks current offer response.
+The goal of this project is to __optimize Starbucks' promotion strategy__, whereas the focus lies on maximizing __transaction profits__ per user ($\\PPU$). In order to do so, I'm going to explore __two different approaches__ of finding the right types of offers for each individual Starbucks app user. The first one is an __alytical solution__ to the problem - simple yet effective - that extracts the optimal combination of offer types including expected transaction profits for different demographic groups. The second one involves __linear and tree-based regression models__ as well as simulations of monetary response for each app user and possible offer type combinations. In the end, both solutions will have to prove their validity against a __benchmark__ of Starbucks current offer response.
 
 ## Files
 The __data__ used throughout this project is contained in three files: ```portfolio.json```, ```profile.json``` & ```transcript.json```. Despite that, you find all __coding work__ in the jupyter notebook ```starbucks_capstone.ipynb```in the main folder of this repository. Please use the following file tree for further orientation.
@@ -58,6 +58,17 @@ The __data__ used throughout this project is contained in three files: ```portfo
 ```
 
 ## Findings
+Both the analytical (and its variations) and the regression model achieve solutions that __outperform__ Starbucks' current offer sendout logic in terms of expected profit per user ($\\PPU$). The main reason for this is the fact that each of the models allows for much more precise targeting which includes not sending out offers at all to particular groups of app users. Thus, Starbucks can save a lot of money on paying rewards to those customer that would have spent their money anyways. In direct comparison the analytical model even wins over the more sophisticated approach by 16-39% on estimated values of expected $\\PPU$. Despite that it is much simpler to implement and explain.
+
+### Analytical Model
+- Sending out offers based on each of the variations leads to an __improvement of$\ PPU$__ by 20-44% compared to our benchmark
+- Increasing the number of offer type combinations per demographic group that result from the first, the frequency based ranking, __further improves the expected$\ PPU$__
+- Increased$\ PPU$ comes at the cost of __losing support__ within the data e.g. arriving at$\ PPU_{Top5} = 17.28\$$ is based on  records of 10,603 (62\%) users only
+- The way the demographics groups are being created can impose quite some __uncertainty__ when leading to very small groups or even down to single users
+
+#### Regression Model (XGBoost)
+- Regression model is able to find offer type combinations for each user which __improve transaction profits__ per user by 7% with $\\PPU_{Regr} = 12.45\$$
+- Finding the right offers can sometimes mean __not sending__ any offer at all (14% less users reached with offers)
 
 ## Acknowledgements
 I'd really like to thank __Starbucks__ for providing the data to this project. Please be aware that this data set was provided in [Udacity's Data Scientist Nanodegree Program](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) so it may not be free for everyone to use.
