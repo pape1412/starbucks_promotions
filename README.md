@@ -62,8 +62,6 @@ Both the analytical (and its variations) and the regression model achieve soluti
 
 For more details, feel free to check out this [Medium blog post](https://medium.com/@patrickpeltier/promotion-strategy-optimization-with-starbucks-a571a22bd3c9) with all project results.
 
-https://medium.com/@patrickpeltier/promotion-strategy-optimization-with-starbucks-a571a22bd3c9
-
 ### Analytical Model
 - Sending out offers based on each of the variations leads to an __improvement of PPU__ by 20-44% compared to our benchmark
 - Increasing the number of offer type combinations per demographic group that result from the first, the frequency based ranking, __further improves the expected PPU__
