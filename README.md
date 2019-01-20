@@ -60,6 +60,10 @@ The __data__ used throughout this project is contained in three files: ```portfo
 ## Findings
 Both the analytical (and its variations) and the regression model achieve solutions that __outperform__ Starbucks' current offer sendout logic in terms of expected profit per user (PPU). The main reason for this is the fact that each of the models allows for much more precise targeting which includes not sending out offers at all to particular groups of app users. Thus, Starbucks can save a lot of money on paying rewards to those customer that would have spent their money anyways. In direct comparison the analytical model even wins over the more sophisticated approach by 16-39% on estimated values of expected PPU. Despite that it is much simpler to implement and explain.
 
+For more details, feel free to check out this [Medium blog post](https://medium.com/@patrickpeltier/promotion-strategy-optimization-with-starbucks-a571a22bd3c9) with all project results.
+
+https://medium.com/@patrickpeltier/promotion-strategy-optimization-with-starbucks-a571a22bd3c9
+
 ### Analytical Model
 - Sending out offers based on each of the variations leads to an __improvement of PPU__ by 20-44% compared to our benchmark
 - Increasing the number of offer type combinations per demographic group that result from the first, the frequency based ranking, __further improves the expected PPU__
