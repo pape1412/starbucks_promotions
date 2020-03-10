@@ -1,5 +1,5 @@
 # Starbucks Promotions
-Optimizing Starbucks promotion strategy.
+Optimizing Starbucks' promotion strategy.
 
 ## Installation
 ### Libraries
@@ -73,4 +73,4 @@ For more details, feel free to check out this [Medium blog post](https://medium.
 - Finding the right offers can sometimes mean __not sending__ any offer at all (14% less users reached with offers)
 
 ## Acknowledgements
-I'd really like to thank __Starbucks__ for providing the data to this project. Please be aware that this data set was provided in [Udacity's Data Scientist Nanodegree Program](https://eu.udacity.com/course/data-scientist-nanodegree--nd025) so it may not be free for everyone to use.
+This mini project is one of the projects I've worked on during my Data Scientist Nanodegree programm at [Udacity](https://eu.udacity.com/course/data-scientist-nanodegree--nd025). Please be aware that this data set was provided by Starbucks during the programm so it may not be free for everyone to use.
